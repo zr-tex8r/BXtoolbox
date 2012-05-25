@@ -1,0 +1,72 @@
+BXtoolbox パッケージ
+
+etoolbox の機能の一部を非 e-TeX エンジンで使うための LaTeX パッケージ
+
+■インストール
+
+  - *.sty, *.def  → $TEXMF/tex/latex/BXtoolbox/
+
+------------------------------------------------------------
+BXtoolbox package
+
+A LaTeX package to provide part of the functions of etoolbox for non-e-TeX engines, plus more.
+
+1. Overview
+
+The main goal of this package is to provide part of the functions of
+the etoolbox package for TeX engines without e-TeX extension. Today
+this idea sounds rather anachronic, since seemingly all of the TeX
+engines that run the LaTeX system and one who develops LaTeX packages
+no longer needs to care about such antique of non-e-TeX engines. The
+surprising fact is, however, this is not true, at least in the small
+region of the world. The reason is the existence of pTeX, a TeX engine
+localized for the Japanese langauge. It is only few years ago that
+e-TeX extended pTeX (natually named e-pTeX) came into being. And now
+in Japan many people still use pTeX without e-TeX extension (and some
+of them don't have e-pTeX on their machines).
+(... to be continued)
+
+Note that when this package is loaded in e-TeX engines, then it loads
+the real etoolbox and uses the functions of that package.
+
+2. Installation
+
+  - *.sty, *.def -> $TEXMF/tex/latex/BXtoolbox/
+
+3. e-TeX Functions provided by this package
+
+  \AfterPreamble \AtEndPreamble \AfterEndPreamble
+  \AfterEndDocument
+  \csdef \csgdef \csedef \csxdef
+  \cslet \letcs \csletcs \undef \csundef
+  \appto \gappto \eappto \xappto
+  \csappto \csgappto \cseappto \csxappto
+  \preto \gpreto \epreto \xpreto
+  \cspreto \csgpreto \csepreto \csxpreto
+  \newbool \providebool \booltrue \boolfalse
+  \setbool \ifbool \notbool
+  \newtoggle \providetoggle \toggletrue \togglefalse
+  \settoggle \iftoggle \nottoggle
+  \ifdef \ifundef
+  \ifstrequal \ifstrempty
+
+4. "Fakes" provided by this package
+
+  These commands have a name of that of the original prefixed by "bx".
+  Some come in two version: \bxZzz works as \zzz but is lack of
+  expandability \zzz has, whereas \bxZzzX is expandable as \zzz is but
+  otherwise flawed.
+
+  - \bxNewrobustcmd: uses LaTeX-protect instead of \protected
+  - \bxRenewrobustcmd: ditto
+  - \bxProviderobustcmd: ditto
+  - \bxRobustify: ditto
+  - \bxCsuse: forbidden in moving arguments
+  - \bxCsuseX: suffering from \relax'ifying
+  - \bxCsshow: forbidden in moving arguments
+  - \bxIfcsdef: forbidden in moving arguments
+  - \bxIfcsundef: forbidden in moving arguments
+  - \bxIfcsundefX: suffering from \relax'ifying
+
+Note: on e-TeX engines, these commands are simply aliases to the real
+commands of etoolbox.
