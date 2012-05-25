@@ -1,10 +1,10 @@
-BXtoolbox ƒpƒbƒP[ƒW
+BXtoolbox ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸
 
-etoolbox ‚Ì‹@”\‚Ìˆê•”‚ğ”ñ e-TeX ƒGƒ“ƒWƒ“‚Åg‚¤‚½‚ß‚Ì LaTeX ƒpƒbƒP[ƒW
+etoolbox ã®æ©Ÿèƒ½ã®ä¸€éƒ¨ã‚’é e-TeX ã‚¨ãƒ³ã‚¸ãƒ³ã§ä½¿ã†ãŸã‚ã® LaTeX ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸
 
-¡ƒCƒ“ƒXƒg[ƒ‹
+â– ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 
-  - *.sty, *.def  ¨ $TEXMF/tex/latex/BXtoolbox/
+  - *.sty, *.def  â†’ $TEXMF/tex/latex/BXtoolbox/
 
 ------------------------------------------------------------
 BXtoolbox package
